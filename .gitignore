@@ -2,3 +2,17 @@ bin/
 hashable-share/.metadata
 hashable-share/build.properties
 hashable-repo/build.properties
+
+
+hashable-repo/.classpath
+
+hashable-repo/.project
+
+hashable-repo/.settings/
+
+
+hashable-share/.classpath
+
+hashable-share/.project
+
+hashable-share/.settings/

@@ -37,14 +37,15 @@ import org.alfresco.service.cmr.repository.NodeRef;
 import org.alfresco.service.cmr.repository.NodeService;
 import org.alfresco.service.namespace.NamespaceService;
 import org.alfresco.service.namespace.QName;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import br.com.dgcloud.hashable.model.HashableModel;
 
 public class ContentHasher implements OnAddAspectPolicy, OnContentUpdatePolicy,
 		OnUpdatePropertiesPolicy {
 	
-	private static final Logger logger = Logger.getLogger(ContentHasher.class);
+	private static final Logger logger = LogManager.getLogger(ContentHasher.class);
 	private static final String DEFAULT_HASH_TYPE = "md5";
 	private static final int BUFFER_SIZE = 1 << 8;
 	
